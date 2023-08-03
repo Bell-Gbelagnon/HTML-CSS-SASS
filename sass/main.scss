@@ -1,0 +1,60 @@
+@mixin blocOption($fs: 300px,$lm: 460px, $hf: green,){
+    height: $fs;
+    width: $lm;
+    background-color: $hf;
+}
+.boite{
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    &__1{
+        @include blocOption();
+    }
+    &__2{
+        @include blocOption($hf:blue,$lm:100px);
+    }
+    &__3{
+        @include blocOption($hf:violet,$fs:80px);
+    }
+}
+@mixin deco{
+    font-weight: 100;
+    text-decoration: line-through;
+}
+@mixin myfs($fs: 50px){
+    font-size: $fs;
+}
+@mixin blocOption($fs: 300px,$lm: 160px, $hf: green,){
+    height: $fs;
+    width: $lm;
+    background-color: $hf;
+}
+.custom{
+    &1{
+        font-style: italic;
+        color: rgb(255, 4, 4);
+        @include deco();
+        @include myfs();
+    }
+    &2{
+        font-style: oblique;
+        color: rgb(1, 15, 90);
+        @include deco();
+        @include myfs();
+    }
+    &3{
+        font-style: italic;
+        color: rgb(43, 0, 2);
+        @include deco();
+        @include myfs();
+    }
+    &4{
+        font-style: oblique;
+        color: rgb(0, 0, 0);
+        @include deco();
+        @include myfs();
+    }
+}

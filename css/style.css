@@ -1,0 +1,54 @@
+.boite {
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+}
+.boite__1 {
+  height: 300px;
+  width: 460px;
+  background-color: green;
+}
+.boite__2 {
+  height: 300px;
+  width: 100px;
+  background-color: blue;
+}
+.boite__3 {
+  height: 80px;
+  width: 460px;
+  background-color: violet;
+}
+
+.custom1 {
+  font-style: italic;
+  color: rgb(255, 4, 4);
+  font-weight: 100;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+.custom2 {
+  font-style: oblique;
+  color: rgb(1, 15, 90);
+  font-weight: 100;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+.custom3 {
+  font-style: italic;
+  color: rgb(43, 0, 2);
+  font-weight: 100;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+.custom4 {
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
